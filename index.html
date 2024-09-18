@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodizer</title>
+    <!-- Top Bar <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <nav class="top-bar">
+        <h1>Foodizer</h1>
+    </nav>
+
+    <!-- Main Content -->
+    <h2>Nearby Restaurants</h2>
+    <button onclick="getLocation()">Get My Location</button>
+    <p id="location"></p>
+    
+    <label for="rangeInput">Total Range: <span id="rangeValue">500</span> meters</label>
+    <input type="range" id="rangeInput" min="100" max="5000" step="100" value="500" onchange="updateRangeValue()">
+    
+    <div id="results"></div>
+    
+    <button onclick="animateRandomSelection()">Randomly Select a Restaurant</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
